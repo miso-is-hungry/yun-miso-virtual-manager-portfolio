@@ -79,6 +79,7 @@ h1 em { font-style: normal; color: var(--yellow); }
 .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
 .project-card { position: relative; display: flex; min-height: 285px; padding: 28px; overflow: hidden; border: 1px solid rgba(192, 184, 255, .34); border-radius: 18px; color: var(--text); text-align: left; font-family: var(--sans); cursor: pointer; transition: transform .25s ease, border-color .25s ease, filter .25s ease; }
 .project-card::before { content: ""; position: absolute; inset: 0; opacity: .78; transition: opacity .25s ease; }
+.project-card::after { content: "✦"; position: absolute; top: 22px; right: 25px; z-index: 1; color: rgba(255, 255, 255, .88); font-size: 22px; line-height: 1; text-shadow: 0 0 16px rgba(255,255,255,.38); pointer-events: none; }
 .project-card:hover { transform: translateY(-5px); border-color: rgba(245, 219, 255, .8); filter: brightness(1.1); }
 .project-card:hover::before { opacity: 1; }
 .project-card > * { position: relative; z-index: 1; }
