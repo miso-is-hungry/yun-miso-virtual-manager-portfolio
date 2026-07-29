@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="일정과 콘텐츠, 팬덤과 제작 현장을 연결하는 버추얼 매니저 윤미소의 포트폴리오"
+    />
+    <title>윤미소 / 버추얼 매니저 포트폴리오</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow--one"></div>
+    <div class="page-glow page-glow--two"></div>
+
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <header class="site-header">
+          <a class="brand" href="#top" aria-label="윤미소 포트폴리오 처음으로">YUN MISO <span>✦</span></a>
+          <p>VIRTUAL MANAGER · PORTFOLIO</p>
+        </header>
+
+        <div class="hero-copy" id="top">
+          <h1 id="hero-title">아티스트가 <em>빛나는 일에</em> 집중하도록.</h1>
+          <p class="lead">
+            일정과 콘텐츠, 팬덤과 제작 현장을 연결하는 버추얼 매니저 <strong>윤미소</strong>입니다.
+          </p>
+          <a class="button button--light" href="#projects">프로젝트 보기 <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <p class="meta-label">CORE FOCUS</p>
+            <div class="pill-row">
+              <span class="pill">일정 관리</span>
+              <span class="pill">콘텐츠 운영</span>
+              <span class="pill">제작 소통</span>
+            </div>
+          </div>
+          <div>
+            <p class="meta-label">TOOLS</p>
+            <div class="pill-row pill-row--tools">
+              <span class="pill">Blender</span>
+              <span class="pill">Unreal Engine</span>
+              <span class="pill">ChatGPT</span>
+              <span class="pill">Gemini</span>
+              <span class="pill">Notion</span>
+              <span class="pill">Photoshop</span>
+              <span class="pill">Premiere Pro</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="approach section" aria-labelledby="approach-title">
+        <p class="eyebrow">MY APPROACH</p>
+        <h2 id="approach-title">운영은 정확하게,<br />소통은 감각적으로.</h2>
+        <p class="approach-copy">
+          방송 일정과 팀 내부 소통을 꼼꼼히 정리하고, 팬이 음악과 굿즈를 자연스럽게 발견하도록 콘텐츠를 만듭니다. MBC 버추얼 팬덤 플랫폼 과정에서 3D·AI·실시간 제작 흐름을 배우며, 아티스트와 제작팀의 언어를 이해하는 버추얼 매니저로 성장하고 있습니다.
+        </p>
+
+        <div class="focus-grid">
+          <article>
+            <p>01 · 운영 정리</p>
+            <span>흐름을 놓치지 않도록 정보와 일정을 정리합니다.</span>
+          </article>
+          <article>
+            <p>02 · 팬덤 콘텐츠</p>
+            <span>발견의 순간을 만드는 콘텐츠를 설계합니다.</span>
+          </article>
+          <article>
+            <p>03 · 제작 소통</p>
+            <span>기술 언어를 이해하고 팀의 연결을 돕습니다.</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SELECTED PROJECTS</p>
+            <h2 id="projects-title">경험을 프로젝트로 정리했습니다.</h2>
+          </div>
+          <p>카드를 눌러 역할과 작업 기록을 확인하세요.</p>
+        </div>
+
+        <div class="project-grid">
+          <button class="project-card project-card--team" type="button" data-modal="team-modal">
+            <span class="project-type">ONGOING · 2026.07 —</span>
+            <strong>팀파서블<br />채널 운영 지원</strong>
+            <span class="project-link">자세히 보기 ↗</span>
+          </button>
+          <button class="project-card project-card--music" type="button" data-modal="music-modal">
+            <span class="project-type">PERSONAL CHANNEL · 2026.07 —</span>
+            <strong>버뮤냥<br />음악 큐레이션</strong>
+            <span class="project-link">자세히 보기 ↗</span>
+          </button>
+          <button class="project-card project-card--goods" type="button" data-modal="goods-modal">
+            <span class="project-type">PERSONAL CHANNEL · 2026.01 —</span>
+            <strong>버사인<br />굿즈 정보 콘텐츠</strong>
+            <span class="project-link">자세히 보기 ↗</span>
+          </button>
+          <button class="project-card project-card--mbc" type="button" data-modal="mbc-modal">
+            <span class="project-type">MBC HRD CENTER · 2025.12 — 2026.07</span>
+            <strong>버추얼 뮤직비디오<br />제작 프로젝트</strong>
+            <span class="project-link">자세히 보기 ↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="contact section" aria-labelledby="contact-title">
+        <p class="eyebrow">CONNECT</p>
+        <p class="contact-message" id="contact-title">버추얼 크리에이터와 팬덤이 오래 만나고 성장할 수 있는 환경을 만들고 싶습니다.</p>
+        <div class="contact-line">
+          <span>YUN MISO</span>
+          <i></i>
+          <a href="tel:01031561738">PHONE: 010-3156-1738</a>
+          <i></i>
+          <a href="https://mail.naver.com/v2/new" target="_blank" rel="noreferrer">MAIL: dbs315600@naver.com</a>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="modal" id="team-modal" aria-labelledby="team-title">
+      <article class="modal-panel">
+        <form method="dialog"><button class="close" aria-label="닫기">×</button></form>
+        <p class="project-type project-type--accent">ONGOING · 2026.07 —</p>
+        <h2 id="team-title">팀파서블<br />채널 운영 지원</h2>
+        <p class="modal-intro">종합게임 팀 채널의 멤버별 라이브 방송 일정이 원활하게 공유되도록 돕고 있습니다. 채널 재가동 초기 단계에서 주간 일정 수합과 내부 안내를 맡아 팀원의 정보 공유 흐름을 정리하고 있습니다.</p>
+        <dl class="detail-grid">
+          <div><dt>역할</dt><dd>주간 방송 일정 수합</dd></div>
+          <div><dt>운영 흐름</dt><dd>일요일 일정 등록 안내</dd></div>
+          <div><dt>협업 대상</dt><dd>팀파서블 멤버</dd></div>
+        </dl>
+        <section class="work-record">
+          <h3>작업 기록</h3>
+          <figure class="schedule-figure"><img src="assets/team-schedule-guide.png" alt="주간 라이브 방송 일정 등록 안내 작업 예시" /></figure>
+        </section>
+        <p class="modal-note">현재 활동 중인 역할입니다. 채널 운영 흐름을 익히며, 필요한 운영 업무를 지원하고 있습니다.</p>
+      </article>
+    </dialog>
+
+    <dialog class="modal" id="music-modal" aria-labelledby="music-title">
+      <article class="modal-panel">
+        <form method="dialog"><button class="close" aria-label="닫기">×</button></form>
+        <p class="project-type project-type--pink">PERSONAL CHANNEL · 2026.07 —</p>
+        <h2 id="music-title">버뮤냥<br />버추얼 음악 큐레이션</h2>
+        <p class="modal-intro">버추얼 아티스트의 오리지널곡과 커버곡을 팬이 새롭게 발견할 수 있도록 소개하는 음악 큐레이션 채널입니다. 현재는 스텔라이브 음악을 중심으로 운영하며, 다양한 버추얼 아티스트로 범위를 확장하고 있습니다.</p>
+        <dl class="detail-grid">
+          <div><dt>역할</dt><dd>영상 구간 선정 · 릴스 편집</dd></div>
+          <div><dt>콘텐츠</dt><dd>자막 · 표지 · 캡션 작성</dd></div>
+          <div><dt>목표</dt><dd>발견에서 감상까지 연결</dd></div>
+        </dl>
+        <section class="work-record">
+          <h3>작업 기록</h3>
+          <div class="media-grid media-grid--portrait">
+            <figure><img src="assets/vermyunyang-rin.png" alt="아오쿠모 린 소개 콘텐츠" /><figcaption>아오쿠모 린 〈Maid My Way〉 소개 콘텐츠</figcaption></figure>
+            <figure><img src="assets/vermyunyang-riko.png" alt="유즈하 리코 소개 콘텐츠" /><figcaption>유즈하 리코 〈악당주의보〉 소개 콘텐츠</figcaption></figure>
+          </div>
+        </section>
+        <p class="modal-note">공식 영상 또는 방송 라이브를 바탕으로 감상 포인트와 원본 링크를 함께 구성합니다. 원본 영상의 흐름을 해치지 않으며 정보와 자막을 더하는 편집 방식을 지향합니다.</p>
+        <a class="button button--accent" href="https://www.instagram.com/v_music_nyang/" target="_blank" rel="noreferrer">인스타그램에서 보기 ↗</a>
+      </article>
+    </dialog>
+
+    <dialog class="modal" id="goods-modal" aria-labelledby="goods-title">
+      <article class="modal-panel">
+        <form method="dialog"><button class="close" aria-label="닫기">×</button></form>
+        <p class="project-type project-type--blue">PERSONAL CHANNEL · 2026.01 —</p>
+        <h2 id="goods-title">버사인<br />굿즈 정보 콘텐츠</h2>
+        <p class="modal-intro">버추얼 아티스트 굿즈 소식을 카드뉴스형 피드로 정리하는 정보 큐레이션 채널입니다. 공식 자료를 바탕으로 옵션·상품명·가격을 한눈에 확인할 수 있도록 정보 흐름과 이미지 구성을 설계합니다.</p>
+        <dl class="detail-grid">
+          <div><dt>역할</dt><dd>정보 구조화 · 카드 구성</dd></div>
+          <div><dt>도구</dt><dd>Photoshop · AI 이미지 편집</dd></div>
+          <div><dt>형식</dt><dd>인스타그램 카드뉴스</dd></div>
+        </dl>
+        <section class="work-record">
+          <h3>작업 기록</h3>
+          <div class="media-grid media-grid--goods">
+            <figure><img src="assets/goods-feature.png" alt="굿즈 옵션 카드뉴스 예시" /><figcaption>굿즈 옵션·가격을 카드뉴스형 피드로 재구성한 게시물</figcaption></figure>
+            <figure><img src="assets/goods-feed-grid.png" alt="아티스트별 굿즈 소식 피드 구성" /><figcaption>아티스트별 굿즈 소식 피드 구성</figcaption></figure>
+          </div>
+        </section>
+        <p class="modal-note">여러 공식 이미지를 한 화면에 자연스럽게 담기도록 크기·배치·배경을 조정하고, 게시물 분위기에 맞는 인스타그램 음악을 함께 선택합니다.</p>
+        <a class="button button--accent" href="https://www.instagram.com/virtual_hf/" target="_blank" rel="noreferrer">인스타그램에서 보기 ↗</a>
+      </article>
+    </dialog>
+
+    <dialog class="modal" id="mbc-modal" aria-labelledby="mbc-title">
+      <article class="modal-panel">
+        <form method="dialog"><button class="close" aria-label="닫기">×</button></form>
+        <p class="project-type project-type--orange">MBC HRD CENTER · 2025.12 — 2026.07</p>
+        <h2 id="mbc-title">버추얼 뮤직비디오<br />제작 프로젝트</h2>
+        <p class="modal-intro">뮤직비디오 제작 프로젝트에서 배경 에셋과 프랍을 제작했습니다. 작업 과정에서는 Notion으로 프랍별 일정, 제작 공정, 수정 사항과 진행 상태를 직접 정리하며 작업 흐름을 관리했습니다.</p>
+        <dl class="detail-grid">
+          <div><dt>핵심 역할</dt><dd>배경 에셋 · 프랍 제작</dd></div>
+          <div><dt>작업 관리</dt><dd>Notion 기반 일정 · 프랍 리스트 정리</dd></div>
+          <div><dt>활용 도구</dt><dd>Blender · Unreal Engine · Notion · AI 도구</dd></div>
+        </dl>
+        <section class="work-record">
+          <h3>작업 기록</h3>
+          <div class="media-grid media-grid--mbc">
+            <figure><img src="assets/mbc-props.png" alt="3D 소품 제작 노드 구성" /><figcaption>3D 소품 제작 · 노드 구성</figcaption></figure>
+            <figure><img src="assets/mbc-furniture.png" alt="기억 저장소 가구와 소품 모델링" /><figcaption>기억 저장소 가구·소품 모델링</figcaption></figure>
+            <figure><img src="assets/mbc-notion-schedule.png" alt="Notion으로 정리한 프랍별 일정 관리표" /><figcaption>프랍별 일정 관리</figcaption></figure>
+            <figure><img src="assets/mbc-hair-feedback.png" alt="캐릭터 헤어 실루엣 수정 피드백" /><figcaption>캐릭터 헤어 실루엣 수정 피드백</figcaption></figure>
+          </div>
+        </section>
+        <p class="modal-note">기억 저장소와 오르골 방의 콘셉트를 기획하고, AI 기반 설계안과 배경 에셋·소품 파일을 제작했습니다. 협업 시 요청을 구체적으로 정리하며 공간의 감정선을 보완했습니다.</p>
+      </article>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
