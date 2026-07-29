@@ -50,7 +50,7 @@ body {
 h1, h2, h3, p { margin-top: 0; }
 h1, h2 { letter-spacing: -.075em; line-height: .98; }
 h1 { max-width: 870px; margin: 14px 0 30px; font-size: clamp(3.2rem, 7vw, 6.3rem); }
-h1 em { font-style: normal; color: var(--yellow); }
+h1 em { display: block; white-space: nowrap; font-style: normal; color: var(--yellow); }
 .lead { max-width: 615px; margin-bottom: 30px; color: var(--muted); font-size: clamp(1rem, 1.8vw, 1.2rem); line-height: 1.7; letter-spacing: -.03em; }
 .lead strong { color: var(--text); }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; padding: 13px 18px; border: 0; border-radius: 999px; font: 600 14px var(--sans); text-decoration: none; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
@@ -78,15 +78,15 @@ h1 em { font-style: normal; color: var(--yellow); }
 .section-heading > p { max-width: 270px; color: var(--muted); font-size: 14px; line-height: 1.6; }
 .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
 .project-card { position: relative; display: flex; min-height: 285px; padding: 28px; overflow: hidden; border: 1px solid rgba(192, 184, 255, .34); border-radius: 18px; color: var(--text); text-align: left; font-family: var(--sans); cursor: pointer; transition: transform .25s ease, border-color .25s ease, filter .25s ease; }
-.project-card::before { content: ""; position: absolute; inset: 0; opacity: .78; transition: opacity .25s ease; }
-.project-card::after { content: "✦"; position: absolute; top: 22px; right: 25px; z-index: 1; color: rgba(255, 255, 255, .88); font-size: 22px; line-height: 1; text-shadow: 0 0 16px rgba(255,255,255,.38); pointer-events: none; }
+.project-card::before { content: ""; position: absolute; inset: 0; opacity: 1; transition: opacity .25s ease; }
+.project-card::after { content: "✦"; position: absolute; top: 23px; right: 26px; z-index: 1; color: rgba(255, 255, 255, .72); font-size: 18px; line-height: 1; text-shadow: 0 0 14px rgba(255,255,255,.34); pointer-events: none; }
 .project-card:hover { transform: translateY(-5px); border-color: rgba(245, 219, 255, .8); filter: brightness(1.1); }
 .project-card:hover::before { opacity: 1; }
 .project-card > * { position: relative; z-index: 1; }
-.project-card--team::before { background: radial-gradient(circle at 63% 25%, rgba(145, 124, 255, .65), transparent 33%), linear-gradient(135deg, #251d52, #11132a 78%); }
-.project-card--music::before { background: radial-gradient(circle at 85% 18%, rgba(213, 74, 133, .34), transparent 40%), linear-gradient(135deg, #371425, #1d101a 78%); }
-.project-card--goods::before { background: radial-gradient(circle at 22% 18%, rgba(53, 160, 250, .22), transparent 35%), linear-gradient(135deg, #0e2a49, #0d172b 78%); }
-.project-card--mbc::before { background: radial-gradient(circle at 89% 23%, rgba(214, 143, 56, .25), transparent 41%), linear-gradient(135deg, #2e1b15, #17111a 78%); }
+.project-card--team::before { background: radial-gradient(circle at 66% 24%, rgba(181, 163, 255, .7), transparent 18%), radial-gradient(circle at 66% 24%, rgba(112, 89, 213, .34), transparent 41%), linear-gradient(135deg, #282354, #131630 78%); }
+.project-card--music::before { background: radial-gradient(circle at 83% 22%, rgba(246, 147, 194, .25), transparent 17%), radial-gradient(circle at 83% 22%, rgba(174, 61, 113, .32), transparent 43%), linear-gradient(135deg, #3a1c32, #1b1424 78%); }
+.project-card--goods::before { background: radial-gradient(circle at 24% 19%, rgba(126, 192, 255, .28), transparent 17%), radial-gradient(circle at 24% 19%, rgba(50, 128, 207, .22), transparent 43%), linear-gradient(135deg, #17395b, #101b32 78%); }
+.project-card--mbc::before { background: radial-gradient(circle at 84% 24%, rgba(255, 207, 142, .23), transparent 17%), radial-gradient(circle at 84% 24%, rgba(194, 120, 61, .26), transparent 43%), linear-gradient(135deg, #38261f, #19141d 78%); }
 .project-card .project-type { align-self: flex-start; }
 .project-card--team .project-type { color: #beb0ff; }
 .project-card--music .project-type { color: #fd9ac9; }
