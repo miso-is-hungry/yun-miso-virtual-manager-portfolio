@@ -82,34 +82,6 @@
         </div>
       </section>
 
-      <section class="management section" aria-labelledby="management-title">
-        <div class="management-intro">
-          <p class="eyebrow">MANAGEMENT FLOW</p>
-          <h2 id="management-title">일정부터 공유까지,<br />운영 흐름을 정리합니다.</h2>
-          <p>
-            현재 팀 채널의 복귀 초기 기획 단계에서 주간 방송 일정 등록 안내와 일정 취합을 담당하고 있습니다.
-            멤버가 필요한 정보를 제때 확인할 수 있도록, 일정의 흐름을 한눈에 정리하는 일을 우선합니다.
-          </p>
-        </div>
-
-        <ol class="flow-list" aria-label="주간 방송 일정 운영 흐름">
-          <li><span>01</span><strong>일정 등록 안내</strong><p>정해진 시점에 멤버에게 다음 주 방송 일정 등록을 안내합니다.</p></li>
-          <li><span>02</span><strong>일정 취합</strong><p>공유된 방송 날짜와 시간을 확인해 주간 일정을 정리합니다.</p></li>
-          <li><span>03</span><strong>내부 공유</strong><p>팀원들이 방송 일정과 진행 상황을 확인할 수 있도록 공유합니다.</p></li>
-          <li><span>04</span><strong>변경 사항 확인</strong><p>일정 변동이나 누락 여부를 확인해 필요한 내용을 반영합니다.</p></li>
-        </ol>
-
-        <div class="management-scope">
-          <p class="meta-label">SUPPORT SCOPE</p>
-          <div>
-            <strong>현재 담당</strong><span>주간 방송 일정 등록 안내 · 일정 취합 · 팀 내부 공유</span>
-          </div>
-          <div>
-            <strong>향후 지원 범위</strong><span>운영 보조 · 커뮤니티 및 디스코드 관리 지원</span>
-          </div>
-        </div>
-      </section>
-
       <section class="projects section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading">
           <div>
@@ -146,28 +118,30 @@
       <section class="foundation section" aria-labelledby="foundation-title">
         <div class="section-heading section-heading--foundation">
           <div>
-            <p class="eyebrow">FOUNDATION</p>
-            <h2 id="foundation-title">운영의 기반을<br />쌓아왔습니다.</h2>
+            <p class="eyebrow">CAREER · EXPERIENCE · CERTIFICATE</p>
+            <h2 id="foundation-title">경력 · 경험 ·<br />자격 사항</h2>
           </div>
-          <p>콘텐츠와 제작 현장뿐 아니라, 이슈와 진행 상황을 기록하고 공유하는 방식도 함께 익혀왔습니다.</p>
         </div>
 
         <div class="foundation-grid">
-          <article>
+          <button class="foundation-card foundation-card--career" type="button" data-modal="career-modal">
             <p class="foundation-number">01</p>
-            <h3>이슈 확인과 기록</h3>
-            <p>분석·품질 관리 업무에서 이슈를 확인하고 결과를 기록·보고하는 흐름을 경험했습니다. 운영 과정에서도 누락과 변동을 빠르게 파악하고 공유하는 기반으로 활용합니다.</p>
-          </article>
-          <article>
+            <h3>경력</h3>
+            <p>삼성전자 분석기술팀에서 Wafer 불량 분석과 품질관리 업무를 담당했습니다.</p>
+            <span class="foundation-link">자세히 보기 ↗</span>
+          </button>
+          <button class="foundation-card foundation-card--certificate" type="button" data-modal="certificate-modal">
             <p class="foundation-number">02</p>
-            <h3>콘텐츠·SNS 기획 기반</h3>
-            <p>마케팅 기획 및 SNS 마케팅 관련 자격을 바탕으로, 콘텐츠를 보는 사람의 흐름과 정보 전달 방식을 고민합니다.</p>
-          </article>
-          <article>
+            <h3>자격 사항</h3>
+            <p>마케팅·SNS 콘텐츠 관련 자격과 기술 자격을 취득했습니다.</p>
+            <span class="foundation-link">자세히 보기 ↗</span>
+          </button>
+          <button class="foundation-card foundation-card--experience" type="button" data-modal="mbc-modal">
             <p class="foundation-number">03</p>
-            <h3>제작 협업의 이해</h3>
-            <p>버추얼 팬덤 플랫폼 제작 과정에서 배경·프랍 제작과 일정 관리에 참여했습니다. 제작 언어를 이해하고 팀의 진행 상황을 함께 확인합니다.</p>
-          </article>
+            <h3>프로젝트 경험</h3>
+            <p>MBC HRD 버추얼 팬덤 플랫폼 과정에서 제작과 협업 관리 경험을 쌓았습니다.</p>
+            <span class="foundation-link">프로젝트 보기 ↗</span>
+          </button>
         </div>
       </section>
 
@@ -199,11 +173,60 @@
           <h3>작업 기록</h3>
           <figure class="schedule-figure"><img src="assets/team-schedule-guide.png" alt="주간 라이브 방송 일정 등록 안내 작업 예시" /></figure>
         </section>
+        <section class="team-flow" aria-labelledby="team-flow-title">
+          <h3 id="team-flow-title">운영 흐름</h3>
+          <ol class="flow-list" aria-label="주간 방송 일정 운영 흐름">
+            <li><span>01</span><strong>일정 등록 안내</strong><p>정해진 시점에 멤버에게 다음 주 방송 일정 등록을 안내합니다.</p></li>
+            <li><span>02</span><strong>일정 취합</strong><p>공유된 방송 날짜와 시간을 확인해 주간 일정을 정리합니다.</p></li>
+            <li><span>03</span><strong>내부 공유</strong><p>팀원들이 방송 일정과 진행 상황을 확인할 수 있도록 공유합니다.</p></li>
+            <li><span>04</span><strong>변경 사항 확인</strong><p>일정 변동이나 누락 여부를 확인해 필요한 내용을 반영합니다.</p></li>
+          </ol>
+          <div class="team-scope">
+            <p class="meta-label">SUPPORT SCOPE</p>
+            <div><strong>현재 담당</strong><span>주간 방송 일정 등록 안내 · 일정 취합 · 팀 내부 공유</span></div>
+            <div><strong>향후 지원 범위</strong><span>운영 보조 · 커뮤니티 및 디스코드 관리 지원</span></div>
+          </div>
+        </section>
         <section class="portfolio-summary">
           <p class="summary-label">현재 진행 업무</p>
           <p class="summary-paragraph">채널 복귀 후 초기 프로젝트 기획 단계에서 주간 방송 일정 관리 업무를 우선 담당하고 있습니다.</p>
           <p class="summary-paragraph">멤버가 방송 일정을 등록할 수 있도록 매주 일정 등록 시점과 형식을 디스코드 공지로 안내합니다.</p>
           <p class="summary-paragraph">수합된 일정은 팀 내부 공유를 위해 정리합니다.</p>
+        </section>
+      </article>
+    </dialog>
+
+    <dialog class="modal modal--compact" id="career-modal" aria-labelledby="career-title">
+      <article class="modal-panel">
+        <form method="dialog"><button class="close" aria-label="닫기">×</button></form>
+        <p class="project-type project-type--orange">CAREER · 2023.02 — 2024.09</p>
+        <h2 id="career-title">삼성전자<br />분석기술팀</h2>
+        <p class="modal-intro">Wafer 불량 분석과 품질관리 업무를 담당했습니다. 분석 대상의 불량 위치를 확인하고, 분석에 필요한 시료를 준비한 뒤 결과를 보고하는 과정을 경험했습니다.</p>
+        <dl class="detail-grid">
+          <div><dt>근무 기간</dt><dd>2023.02 — 2024.09<br />1년 8개월</dd></div>
+          <div><dt>직무</dt><dd>Wafer 불량 분석 · 품질관리</dd></div>
+          <div><dt>업무 흐름</dt><dd>시료 준비 · 불량 확인 · 결과 보고</dd></div>
+        </dl>
+        <section class="portfolio-summary">
+          <p class="summary-label">담당 업무</p>
+          <p class="summary-paragraph">Wafer의 불량 여부와 위치를 확인하기 위한 분석 업무를 진행했습니다.</p>
+          <p class="summary-paragraph">분석용 시료를 준비하고 SEM·FIB·TEM 등 장비 분석이 이어질 수 있도록 작업을 지원했습니다.</p>
+          <p class="summary-paragraph">분석 결과는 보고 흐름에 맞춰 정리했습니다. 세부 이슈를 확인하고 기록하는 경험을 통해 정확한 정보 관리의 중요성을 익혔습니다.</p>
+        </section>
+      </article>
+    </dialog>
+
+    <dialog class="modal modal--compact" id="certificate-modal" aria-labelledby="certificate-title">
+      <article class="modal-panel">
+        <form method="dialog"><button class="close" aria-label="닫기">×</button></form>
+        <p class="project-type project-type--pink">CERTIFICATE</p>
+        <h2 id="certificate-title">자격 사항</h2>
+        <p class="modal-intro">콘텐츠 기획과 SNS 운영에 필요한 이해를 넓히기 위해 관련 자격을 취득했으며, 기술 분야의 기초 자격도 함께 보유하고 있습니다.</p>
+        <section class="credential-list" aria-label="보유 자격 사항">
+          <article><span>2025.06</span><div><strong>마케팅기획전문가</strong><p>한국교육검정원</p></div></article>
+          <article><span>2025.06</span><div><strong>SNS마케팅전문가 1급</strong><p>한국직업능력진흥원</p></div></article>
+          <article><span>2022.07</span><div><strong>전자기능사</strong><p>한국산업인력공단</p></div></article>
+          <article><span>2023.01</span><div><strong>1종 보통운전면허</strong><p>경찰청 운전면허시험관리단</p></div></article>
         </section>
       </article>
     </dialog>
